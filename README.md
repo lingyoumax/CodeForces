@@ -1,2 +1,2 @@
 # CodeForces
-Just have fun.
+Just have a fun.
