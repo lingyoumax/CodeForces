@@ -15,7 +15,6 @@ int main() {
 	double a = sqrt((B_x - C_x)*(B_x - C_x) + (B_y - C_y)*(B_y - C_y));
 	double b = sqrt((A_x - C_x)*(A_x - C_x) + (A_y - C_y)*(A_y - C_y));
 	double c = sqrt((A_x - B_x)*(A_x - B_x) + (A_y - B_y)*(A_y - B_y));
-	double cosA = (c*c + b * b - a * a) / (2 * b*c);
 	double r = (a*b*c) / sqrt((a + b + c)*(a + b - c)*(a + c - b)*(b + c - a));
 	double A = acos(1 - (a * a) / (2 * r*r));
 	double B = acos(1 - (b * b) / (2 * r*r));
