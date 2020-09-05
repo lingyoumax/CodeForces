@@ -2,8 +2,7 @@
 #include<algorithm>
 using namespace std;
 struct node {
-	int w = 0, h = 0;
-	int id = 0;
+	int w = 0, h = 0, id = 0;
 	node* last = nullptr;
 	bool friend operator <(node a, node b) {
 		return ((a.w < b.w) || ((a.w == b.w) && (a.h > b.h)));
@@ -26,8 +25,7 @@ inline int read() {
 	return f * x;
 }
 int lower(node a) {
-	int l = 1;
-	int r = len;
+	int l = 1, r = len;
 	while (r - l > 1) {
 		int b = line[(l + r) / 2]->h;
 		if (b >= a.h) {
@@ -49,8 +47,7 @@ int main() {
 	W = read();
 	H = read();
 	for (int i = 1;i <= n;i++) {
-		int a = read();
-		int b = read();
+		int a = read(), b = read();
 		if ((a > W) && (b > H)) {
 			arr[++num].id = i;
 			arr[num].w = a;
